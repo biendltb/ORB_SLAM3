@@ -2050,6 +2050,7 @@ bool Tracking::TrackLocalMap()
 
     // Decide if the tracking was succesful
     // More restrictive if there was a relocalization recently
+    cout <<"Matches Inliners: " << mnMatchesInliers << " | Matching ratio: " << mnMatchesInliers << "/" << mCurrentFrame.N << endl;
     mpLocalMapper->mnMatchesInliers=mnMatchesInliers;
     if(mCurrentFrame.mnId<mnLastRelocFrameId+mMaxFrames && mnMatchesInliers<50)
         return false;

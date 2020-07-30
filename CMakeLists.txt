@@ -192,3 +192,6 @@ Examples/Stereo-Inertial/stereo_inertial_tum_vi.cc)
 target_link_libraries(stereo_inertial_tum_vi ${PROJECT_NAME})
 
 
+add_executable(stereo_inertial_kitti
+Examples/Stereo-Inertial/stereo_inertial_kitti.cc)
+target_link_libraries(stereo_inertial_kitti ${PROJECT_NAME})
