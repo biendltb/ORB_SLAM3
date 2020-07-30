@@ -64,11 +64,11 @@ Tbc: !!opencv-matrix
           9.99984907e-01,  5.50939334e-03, -1.82674831e-05, -1.0715037,
           0.0, 0.0, 0.0, 1.0]
 
-# IMU noise (Use those from VINS-mono)
-IMU.NoiseGyro: 0.00016 # 0.004 (VINS) # 0.00016 (TUM) # 0.00016    # rad/s^0.5 
-IMU.NoiseAcc: 0.0028 # 0.04 (VINS) # 0.0028 (TUM) # 0.0028     # m/s^1.5
-IMU.GyroWalk: 0.000022 # 0.000022 (VINS and TUM) rad/s^1.5
-IMU.AccWalk: 0.00086 # 0.0004 (VINS) # 0.00086 # 0.00086    # m/s^2.5
+# IMU noise (Use those from VINS-Fusion)
+IMU.NoiseGyro: 0.01 # 0.004 (VINS) # 0.00016 (TUM) # 0.00016    # rad/s^0.5 
+IMU.NoiseAcc: 0.1 # 0.04 (VINS) # 0.0028 (TUM) # 0.0028     # m/s^1.5
+IMU.GyroWalk: 1.0e-4 # 0.000022 (VINS and TUM) rad/s^1.5
+IMU.AccWalk: 0.001 # 0.0004 (VINS) # 0.00086 # 0.00086    # m/s^2.5
 IMU.Frequency: 100
 
 
