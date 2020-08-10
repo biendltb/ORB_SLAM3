@@ -149,6 +149,9 @@ add_executable(stereo_tum_vi
 Examples/Stereo/stereo_tum_vi.cc)
 target_link_libraries(stereo_tum_vi ${PROJECT_NAME})
 
+add_executable(stereo_ocams
+Examples/Stereo/stereo_ocams.cc)
+target_link_libraries(stereo_ocams ${PROJECT_NAME})
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular)
 
@@ -195,3 +198,7 @@ target_link_libraries(stereo_inertial_tum_vi ${PROJECT_NAME})
 add_executable(stereo_inertial_kitti
 Examples/Stereo-Inertial/stereo_inertial_kitti.cc)
 target_link_libraries(stereo_inertial_kitti ${PROJECT_NAME})
+
+add_executable(stereo_inertial_ocams
+Examples/Stereo-Inertial/stereo_inertial_ocams.cc)
+target_link_libraries(stereo_inertial_ocams ${PROJECT_NAME})
